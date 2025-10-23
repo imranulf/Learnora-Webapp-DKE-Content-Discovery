@@ -6,7 +6,10 @@
 ![Python](https://img.shields.io/badge/Python-3.13-blue)
 ![Flask](https://img.shields.io/badge/Flask-3.0-green)
 ![React](https://img.shields.io/badge/React-18.2-blue)
+![OS](https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20macOS-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+
+> 🐧 **Linux/Mac Users**: See [`LINUX_GUIDE.md`](LINUX_GUIDE.md) for Linux-specific setup instructions!
 
 ---
 
@@ -114,16 +117,28 @@ Learnora-Webapp-DKE-Content-Discovery/
 
 ## 🚀 Quick Start
 
+### 🖥️ Cross-Platform Support
+
+Learnora runs on **Windows, Linux, and macOS** with **zero code changes** required!
+
+| Platform | Setup Guide | Startup Script |
+|----------|-------------|----------------|
+| 🪟 **Windows** | See below | `start.ps1` (PowerShell) |
+| 🐧 **Linux** | [`LINUX_GUIDE.md`](LINUX_GUIDE.md) | `start.sh` (Bash) |
+| 🍎 **macOS** | [`LINUX_GUIDE.md`](LINUX_GUIDE.md) | `start.sh` (Bash) |
+
+> **Note**: The core Python and Node.js code is 100% cross-platform. Only setup scripts differ by OS.
+
 ### Prerequisites
 - **Python 3.8+** (Conda recommended)
 - **Node.js 14+** and npm
 - **Git**
 
-### Installation
+### Installation (Windows)
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/Learnora-Webapp-DKE-Content-Discovery.git
+git clone https://github.com/imranulf/Learnora-Webapp-DKE-Content-Discovery.git
 cd Learnora-Webapp-DKE-Content-Discovery
 ```
 
@@ -132,8 +147,8 @@ cd Learnora-Webapp-DKE-Content-Discovery
 # Navigate to backend
 cd webapp/backend
 
-# Set PYTHONPATH (Windows)
-$env:PYTHONPATH = "path/to/Learnora-Webapp-DKE-Content-Discovery"
+# Set PYTHONPATH (Windows PowerShell)
+$env:PYTHONPATH = "C:\Users\imran\Learnora-Webapp-DKE-Content-Discovery"
 
 # Install dependencies
 pip install -r requirements.txt
